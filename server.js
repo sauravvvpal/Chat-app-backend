@@ -66,7 +66,10 @@ const server = app.listen(
 const io = require("socket.io")(server, {
   pingTimeout: 60000,
   cors: {
-    origin: "http://localhost:3000",
+    origin: [
+      "http://localhost:3000",
+      "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app/",
+    ],
     // credentials: true,
   },
 });
