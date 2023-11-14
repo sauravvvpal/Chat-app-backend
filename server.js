@@ -20,7 +20,7 @@ app.use(express.json()); // to accept json data
 
 const allowedOrigins = [
   "http://localhost:3000",
-  "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app/",
+  "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app",
 ]; // Add your frontend URLs
 
 app.use(
@@ -68,7 +68,7 @@ const io = require("socket.io")(server, {
   cors: {
     origin: [
       "http://localhost:3000",
-      "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app/",
+      "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app",
     ],
     // credentials: true,
   },
