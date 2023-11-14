@@ -21,6 +21,7 @@ app.use(express.json()); // to accept json data
 const allowedOrigins = [
   "http://localhost:3000",
   "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app",
+  "https://chat-app-frontend-brown.vercel.app",
 ]; // Add your frontend URLs
 
 app.use(
@@ -69,6 +70,7 @@ const io = require("socket.io")(server, {
     origin: [
       "http://localhost:3000",
       "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app",
+      "https://chat-app-frontend-brown.vercel.app",
     ],
     // credentials: true,
   },
