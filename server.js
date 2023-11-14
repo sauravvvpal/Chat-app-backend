@@ -18,7 +18,10 @@ app.use(express.json()); // to accept json data
 //   res.send("API Running!");
 // });\
 
-const allowedOrigins = ["http://localhost:3000"]; // Add your frontend URLs
+const allowedOrigins = [
+  "http://localhost:3000",
+  "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app/",
+]; // Add your frontend URLs
 
 app.use(
   cors({
