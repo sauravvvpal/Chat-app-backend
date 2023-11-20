@@ -71,7 +71,7 @@ const io = require("socket.io")(server, {
       "http://localhost:3000",
       "https://chat-buddy-k6p1pq4ca-sauravvvpal.vercel.app",
       "https://chat-app-frontend-brown.vercel.app",
-      "https://chat-buddy-brown.vercel.app/",
+      "https://chat-buddy-brown.vercel.app",
     ],
     // credentials: true,
   },
